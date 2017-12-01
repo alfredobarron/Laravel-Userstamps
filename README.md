@@ -18,8 +18,8 @@ composer require wildside/userstamps
 Migrate your Model's table to include a `created_by` and `updated_by` (and `deleted_by` if using `SoftDeletes`).
 
 ```php
-$table -> unsignedInteger('created_by') -> nullable() -> default(null) -> after('created_at');
-$table -> unsignedInteger('updated_by') -> nullable() -> default(null) -> after('updated_at');
+$table->unsignedInteger('created_by')->nullable()->default(null)->after('created_at');
+$table->unsignedInteger('updated_by')->nullable()->default(null)->after('updated_at');
 ```
 
 Load the trait in your Model.
